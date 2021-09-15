@@ -1,0 +1,29 @@
+{
+  "name": "price-tracker",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Run this in your teminal ---> node checker.js     YOUR-PRODUCT-LINK      PRICE-YOU-WANT-NOTIFIED",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon backend/server.js",
+    "heroku-postbuild": "cd frontend && npm install --only=dev && npm install && npm run build"
+  },
+  "keywords": [],
+  "author": "dp0510",
+  "license": "MIT",
+  "dependencies": {
+    "@sendgrid/mail": "^7.4.0",
+    "dotenv": "^8.2.0",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "express-async-handler": "^1.1.4",
+    "mongoose": "^5.13.3",
+    "nightmare": "^3.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+  
+  
+}
